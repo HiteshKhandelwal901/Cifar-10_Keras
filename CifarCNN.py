@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[14]:
-
 
 from tensorflow  import keras
 import tensorflow as tf
@@ -33,196 +28,21 @@ model.compile(optimizer='adam',
               loss = 'categorical_crossentropy',
               metrics=['accuracy'])
 
-model.summary()
+print(model.summary())
 
 model.fit(x_train,y_train,epochs=8)
 
 model.evaluate(x_test,  y_test)
 
-#model.weights
+print(model.weights)
 
 
-# In[107]:
 
 
-(x_train, y_train), (x_test, y_test) = mnist.load_data()
 
 
-# In[85]:
 
 
-x_train.shape
-
-
-# In[89]:
-
-
-
-
-
-# In[90]:
-
-
-train_images.shape
-
-
-# In[6]:
-
-
-y_train.shape
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[76]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
